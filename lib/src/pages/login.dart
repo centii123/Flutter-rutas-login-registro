@@ -60,7 +60,9 @@ class loginPages extends StatelessWidget {
                         padding: const MaterialStatePropertyAll(
                             EdgeInsetsDirectional.symmetric(
                                 horizontal: 50, vertical: 15))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.popAndPushNamed(context, "/inicio");
+                    },
                     child: const Text(
                       "GRABAR",
                       style: TextStyle(color: Colors.white),

@@ -9,6 +9,11 @@ class Inicio extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Center(child: Text("Bienvenidos al inicio"),),
+        actions: [
+          IconButton(onPressed: (){
+            Navigator.popAndPushNamed(context, "/");
+          }, icon: Icon(Icons.logout))
+        ],
       ),
       drawer: Drawer(
         child: ListView(
